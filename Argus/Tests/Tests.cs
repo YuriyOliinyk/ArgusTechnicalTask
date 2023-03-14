@@ -17,7 +17,7 @@ namespace Argus.Tests
                 amountMains: 4,
                 amountDrinks: 4);
 
-            //Image that method GetActualOrderDetails() get actual order details
+            //Imagine that method GetActualOrderDetails() get actual order details
             var actualOrder = OrderActions.GetActualOrderDetails();
 
             expectedOrder.TotalWithServiceCharge.Should()
