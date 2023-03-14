@@ -60,7 +60,7 @@ namespace Argus.Entities
             var mainsTotalPrice = _mainsPrice * amountMains;
             var drinksTotalPrice = _drinksPrice * amountDrinks;
 
-            if (orderTime.Hour > 19)
+            if (orderTime.Hour <= 19)
             {
                 drinksTotalPrice = Math.Round(drinksTotalPrice - ((double)_drinksDiscountPercantage / 100 * drinksTotalPrice));
             }
